@@ -1,0 +1,16 @@
+[Default Applications]
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-WWVGK2.desktop
+message/rfc822=userapp-Thunderbird-WWVGK2.desktop
+x-scheme-handler/mid=userapp-Thunderbird-WWVGK2.desktop
+text/html=brave-browser.desktop
+x-scheme-handler/http=brave-browser.desktop
+x-scheme-handler/https=brave-browser.desktop
+x-scheme-handler/about=brave-browser.desktop
+x-scheme-handler/unknown=brave-browser.desktop
+x-scheme-handler/postman=Postman.desktop
+inode/directory=org.gnome.Nautilus.desktop
+
+[Added Associations]
+x-scheme-handler/mailto=userapp-Thunderbird-WWVGK2.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-WWVGK2.desktop;

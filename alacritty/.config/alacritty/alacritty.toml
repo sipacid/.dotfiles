@@ -1,0 +1,12 @@
+import = [
+"~/.config/alacritty/tokyo-night.toml"
+]
+
+[window]
+decorations = "none"
+
+[font]
+normal = { family = "monospace", style = "Regular" }
+
+[env]
+TERM = "xterm-256color"
