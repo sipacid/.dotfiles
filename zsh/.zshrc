@@ -5,6 +5,10 @@ else
   export EDITOR='nvim'
 fi
 
+# zsh add-ons
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/eve/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # fzf setup
 source <(fzf --zsh)
 
