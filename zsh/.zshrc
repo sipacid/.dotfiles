@@ -6,8 +6,8 @@ else
 fi
 
 # zsh add-ons
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # fzf setup
 source <(fzf --zsh)
