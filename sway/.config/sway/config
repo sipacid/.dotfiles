@@ -23,7 +23,7 @@ set $menu dmenu_path | wmenu | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in @datadir@/backgrounds/sway/)
-output * bg /home/eve/.backgrounds/astronaut.jpg fill
+output * bg /home/eve/.backgrounds/stay.png fill
 #
 # Example configuration:
 #
