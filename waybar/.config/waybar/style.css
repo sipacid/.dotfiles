@@ -1,16 +1,25 @@
 * {
   border: none;
   font-family: monospace;
-  font-size: 13px;
+  font-size: 17px;
   min-height: 0;
 }
 
 window#waybar {
-  background-color: rgba(43, 48, 59, 0.5);
+  background: linear-gradient(
+    30deg,
+    rgba(210, 180, 120, 0.7) 0%,
+    rgba(230, 160, 130, 0.7) 24.8%,
+    rgba(245, 90, 38, 0.7) 25%,
+    rgba(205, 70, 20, 0.7) 49.8%,
+    rgba(20, 130, 65, 0.7) 50%,
+    rgba(20, 130, 125, 0.7) 74.8%,
+    rgba(80, 05, 0, 0.7) 75%,
+    rgba(20, 05, 1, 0.7) 100%
+  );
   /*    border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
+  border-radius: 0 0 12 12;
   color: #ffffff;
-  transition-property: background-color;
-  transition-duration: 0.5s;
 }
 
 window#waybar.hidden {
@@ -21,48 +30,32 @@ window#waybar.hidden {
   background-color: transparent;
 }
 
-#workspaces {
-}
-
 #window {
-  margin: 2;
-  padding-left: 8;
-  padding-right: 8;
-  font-size: 14px;
+  background: rgba(200, 75, 50, 0.9);
+  border-radius: 0 0 15 15;
+  padding: 0 10;
   font-weight: bold;
 }
 
-button {
-  /* Use box-shadow instead of border so the text isn't offset */
-  box-shadow: inset 0 -3px transparent;
-  /* Avoid rounded borders under each button name */
-  border: none;
-  border-radius: 0;
-}
-
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
-  background: inherit;
-  border-top: 2px solid #c9545d;
-}
-
 #workspaces button {
-  padding: 0 4px;
-  /*    background-color: rgba(0,0,0,0.3); */
+  padding: 0 5;
+  margin: 3 5;
+  border-radius: 10;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgba(70, 25, 0, 1);
 }
 
 #workspaces button:hover {
+  color: rgba(70, 25, 0, 1);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 #workspaces button.focused {
-  /*    box-shadow: inset 0 -2px #c9545d; */
-  background-color: rgba(0, 0, 0, 0.3);
-  color: #c9545d;
-  border-top: 2px solid #c9545d;
+  background-color: rgba(255, 120, 50, 0.6);
 }
 
 #workspaces button.urgent {
-  background-color: #eb4d4b;
+  background-color: rgba(230, 40, 40, 0.6);
 }
 
 #mode {
@@ -70,95 +63,40 @@ button:hover {
   border-bottom: 3px solid #ffffff;
 }
 
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#mpd {
-  margin: 2px;
-  padding-left: 4px;
-  padding-right: 4px;
-  color: #ffffff;
-}
-
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-  margin-left: 0;
+.modules-left {
+  margin-left: 5;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-  margin-right: 0;
+.modules-right {
+  margin-right: 5;
 }
 
 #clock {
-  font-size: 14px;
-  font-weight: bold;
+  padding: 0 5;
+  margin: 3 4 3 0;
+  border-radius: 10;
 }
 
-#battery icon {
-  color: red;
+#battery {
+  border-radius: 8;
+  padding: 0 5;
+  margin: 3 0;
 }
 
-#battery.charging,
-#battery.plugged {
-  color: #ffffff;
-  background-color: #26a65b;
+#network {
+  color: white;
+  border-radius: 8;
+  padding: 0 5;
+  margin: -8 3;
+  font-size: 170%;
 }
 
-@keyframes blink {
-  to {
-    background-color: #ffffff;
-    color: #000000;
-  }
-}
-
-#battery.warning:not(.charging) {
-  background-color: #f53c3c;
-  color: #ffffff;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-#battery.critical:not(.charging) {
-  background-color: #f53c3c;
-  color: #ffffff;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-label:focus {
-  background-color: #000000;
-}
-
-#network.disconnected {
-  background-color: #f53c3c;
-}
-
-#temperature.critical {
-  background-color: #eb4d4b;
-}
-
-#idle_inhibitor.activated {
-  background-color: #ecf0f1;
-  color: #2d3436;
+#tray {
+  border-radius: 8;
+  padding: 0 3;
+  margin: 3 0;
 }
 
 #tray > .passive {
@@ -167,21 +105,4 @@ label:focus {
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
-  background-color: #eb4d4b;
 }
-
-/*
-
-window#waybar.solo {
-background-color: #FFFFFF;
-}
-
-window#waybar.termite {
-background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-background-color: #000000;
-border: none;
-}
- */
