@@ -5,3 +5,7 @@ normal = { family = "monospace", style = "Regular" }
 
 [env]
 TERM = "xterm-256color"
+
+[window]
+opacity = 0.75
+dynamic_padding = true
