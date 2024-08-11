@@ -19,8 +19,8 @@ noto-fonts-extra
 rofi
 rustup
 starship
-sway
 swaybg
+swayfx
 swaylock
 tmux
 vesktop

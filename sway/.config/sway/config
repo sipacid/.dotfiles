@@ -212,6 +212,22 @@ font pango:monospace 12
 default_border pixel 2
 default_floating_border pixel 2
 
+# TokyoNight theme
+# Property Name             Border  BG      Text    Indicator Child-border
+client.focused              #0a0b16 #2f343f #4477ff #4477ff   #4477ff
+client.focused_inactive     #2f343f #2f343f #d8dee8 #2f343f   #2f343f
+client.unfocused            #2f343f #2f343f #d8dee8 #2f343f   #2f343f
+client.urgent               #2f343f #2f343f #d8dee8 #2f343f   #2f343f
+client.placeholder          #2f343f #2f343f #d8dee8 #2f343f   #2f343f
+
+corner_radius 10
+shadows enable
+shadow_blur_radius 10
+shadow_color #0000007F
+shadow_offset 4 4
+layer_effects "waybar" blur enable; shadows enable;
+default_dim_inactive 0.7
+
 bindsym Control+$mod+L exec swaylock -f -c 000000
 bindsym Print exec flameshot gui
 

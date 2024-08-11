@@ -1,9 +1,4 @@
-import = [
-"~/.config/alacritty/tokyo-night.toml"
-]
-
-[window]
-decorations = "none"
+import = ["~/.config/alacritty/tokyo-night.toml"]
 
 [font]
 normal = { family = "monospace", style = "Regular" }
