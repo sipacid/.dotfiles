@@ -232,6 +232,8 @@ layer_effects "waybar" blur enable; shadows enable;
 bindsym Control+$mod+L exec swaylock -f -c 000000
 bindsym Print exec flameshot gui
 
+exec wl-paste -t text --watch clipman store --no-persist
+
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK

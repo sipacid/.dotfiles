@@ -1,6 +1,7 @@
 1password
 alacritty
 btop
+clipman
 docker
 docker-buildx
 docker-compose
