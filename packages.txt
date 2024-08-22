@@ -1,5 +1,4 @@
 1password
-alacritty
 btop
 clipman
 docker
@@ -10,7 +9,11 @@ flameshot-git
 fontconfig
 git
 go
+hypridle
+hyprland
+hyprlock
 jetbrains-toolbox
+kitty
 lazygit
 neovim
 noto-fonts
@@ -20,9 +23,7 @@ noto-fonts-extra
 rofi
 rustup
 starship
-swaybg
-swayfx
-swaylock
+swww
 tmux
 vesktop
 vim

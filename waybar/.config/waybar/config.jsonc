@@ -1,8 +1,8 @@
 {
   "height": 24,
-  "modules-left": ["sway/workspaces", "sway/mode"],
-  "modules-center": ["sway/window", "mpd"],
-  "modules-right": ["tray", "network", "battery", "clock"],
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "network", "battery"],
   "sway/mode": {
     "format": "<span style=\"italic\">{}</span>",
   },
