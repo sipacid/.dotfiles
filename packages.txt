@@ -7,11 +7,13 @@ docker-compose
 fastfetch
 flameshot-git
 fontconfig
+fzf
 git
 go
 hypridle
 hyprland
 hyprlock
+hyprshot
 jetbrains-toolbox
 kitty
 lazygit

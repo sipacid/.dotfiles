@@ -57,11 +57,6 @@ window#waybar.hidden {
   background-color: rgba(230, 40, 40, 0.6);
 }
 
-#mode {
-  background-color: #64727d;
-  border-bottom: 3px solid #ffffff;
-}
-
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left {
   margin-left: 5;
